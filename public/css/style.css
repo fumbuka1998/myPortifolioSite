@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  
+  background-image:url("./background.jpeg") !important;
+
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  
+}
+
+.wrapper .sabit{
+  color: rgb(15, 10, 10);
+  font-size: 80px;
+  font-weight: 400;
+}
+.wrapper .hareketli{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden; 
+}
+.hareketli li{
+  list-style: none;
+  color: plum;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.hareketli li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.hareketli li span::after{
+  content: ""; /*hareketli çubuk boş*/
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #F7F7F7;
+  border-left: 2px solid #fbfafa;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,60%{ /*giderken ve dönerken */
+    left: calc(100% + 30px);/*tüm yazı açılır ve yanına 30px boşluk konur*/
+  }
+  
+}
+
+
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding-top: 15px ;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    position: fixed;
+    z-index: 999;
+
+  
+}
+
+h1{
+    color:#100f10;
+    font-weight: 200;
+    letter-spacing:2px;
+    font-weight:normal;
+}
+
+header ul{
+display: flex;
+align-items: center;
+
+}
+
+header ul li {
+    padding: 6px 15px;
+    list-style: none;
+    
+
+}
+
+header ul li a {
+text-decoration: none;
+color:rgb(18, 14, 14);
+
+
+}
+
+.hakkimda{
+  margin: auto;
+}
+
+.hakkimdaBilgiler{
+   
+text-align: center;
+border:2px solid #bb6bd9;
+border-radius: 6px;
+padding: 5px;
+margin:auto;
+font-size: 26px;
+letter-spacing: 1px;
+width: 850px;
+
+}
+
+.icons{
+  margin-right: 30px;
+}
+
+
+
+h4{
+    color:#DA4366;
+}
+
+
+ .baslik h1{
+  text-align: center;
+  font-size: 70px;
+  color: #0d0e0d;
+  letter-spacing: 2px;
+  padding: 20px;
+  margin-bottom:30px;
+  margin-top: 30px;
+  font-weight:500;
+ }
+
+ .img {
+  width: 340px;
+  height: 360px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.5s ease-in-out; /*yavas baslangıc ve bitis*/
+  margin-left:90px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  
+ }
+ .img img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 10px;
+ 
+ 
+ }
+ .img:hover{
+  transform: translateY(20px);
+  
+ }
+.img:before{
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+  transition: 00.5s ;
+  opacity: 0;
+
+}
+
+.img:hover img{
+  filter: blur(5px);
+}
+
+.img:hover:before{
+  opacity: 1;  
+ 
+}
+
+.info {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  color:#181515;
+  transform: translateY(30px);
+  transition: 00.5s all;
+}
+ 
+ .img:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+  margin:auto;
+ 
+ }
+ 
+ h5{
+  color:rgb(57, 43, 57);
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin:10px 10px;
+  font-weight: bold;
+  font-size: 25px;
+
+
+ }
+ h6{
+  letter-spacing: 0.1rem;
+  font-size: 17px;
+  margin-bottom: 20px;
+ 
+ }
+ 
+
+ .blog-title{
+  color: plum;
+  text-align: center;
+ }
+
+
+ 
+  .col2{
+  background-color: #F7F7F7;
+  box-shadow: 0 0 2.5rem;
+  height: 480px;
+  width: 1000px;
+  margin: 30px;
+}
+
+.card-img img{
+  width: 400px;
+  height: 450px;
+  display:flex;
+  margin-left:80px;
+  padding-top:10px;
+  float: left;
+}
+
+a:hover{
+  color:plum;
+ text-decoration: none;
+}
+a:active{
+  color:rgb(217, 28, 234);
+}
+.blog-yazi{
+  text-align: center;
+  font-size: 18px;
+}
+ .col2{
+   background-color: #F7F7F7;
+   box-shadow: 0 0 2.5rem ;
+    height: auto;
+    width: auto;
+    margin: auto;
+  
+  }
+
+ #time-left{
+ text-align: center;
+ padding:20px ;
+ color:#a356c0;
+ font-family: 'Rubik Iso', cursive;
+ font-size: 25px;
+}
+
+.down a{ 
+  color:#e4f1e8;
+  display: flex;            
+  justify-content: center;            
+  align-items: center;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .responsive{
+ 
+justify-content: start;
+text-align: left;
+margin: 0;
+float: left;
+
+}
+
+.hakkimdaBilgiler{
+border:2px solid #bb6bd9;
+border-radius: 6px;
+letter-spacing: 1px;
+float: left;
+padding: 5px;
+width: auto;
+height: auto;
+
+}
+
+}
+
+@media screen and (max-width:700px){
+  
+  .blog-title,.blog-yazi,.col2,h6,h5{
+  clear:both;
+  float:left;
+  height:auto;
+  min-height:300px;
+  overflow: hidden;
+  width: auto;
+  }
+
+  .wrapper{
+  display: none;
+  }
+ .hakkimdaBilgiler{
+  width: auto;
+ }
+ header ul li a {
+  display: none;
+}
+
+h6{
+  letter-spacing: 0.1rem;
+  font-size: 17px;
+  margin-bottom: 20px;
+  position: relative;
+  top:-60px;
+ 
+ }
+ 
+
+}
+
+
+
+

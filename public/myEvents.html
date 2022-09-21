@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+
+    <title>MY EVENTS/title>
+    <link rel="stylesheet" id="cssfile" href="css/etkinlikler.css">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+   
+  </head>
+
+  <body>
+
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" id="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    <section class="sec-01" style="margin-left:40px;">
+  
+      <div class="container">
+        <h2 class="ana_baslik">MY EVENTS</h2>
+     
+        <div class="content">
+          <div class="image">
+            <img src="images/techno.jpeg" alt=""></div>
+          
+          <div class="text-box">
+            <h2 class="blog-title">TECHNO-Z </h2>
+           
+          
+              <div class="metin" id="metin">
+                 STANDARD SEVEN GRADUATION CELEMONY 2011.<br>
+                 we enjoyed the day beautifully with our family and friends so this is one of many EVENTS
+                 i will not forget<br>MKUDI PRIMARY SCHOOL in Mwanza region
+               
+                </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+        
+    
+    </section>
+
+    <section class="sec-02">
+
+      <div class="container">
+        
+
+        <div class="content">
+          <div class="image">
+            <img src="images/23nisan.jpeg" >
+          </div>
+          <div class="text-box">
+            <h2 class="blog-title">NIT GRADUATION CELEMONY 2021 </h2>
+           
+            <div class="metin" id="metin"><br>
+            this is another event which occurred in 2021 when i was graduated my first degree at the institute of transport.<br>
+             was an amazing day so i will keep on remembering that day.
+            
+           
+            </div>
+        </div>
+    </div>
+  </div>
+      
+    </section>
+
+ 
+<section class="sec-03">
+
+      <div class="container">
+        
+
+        <div class="content">
+          <div class="image">
+            <img src="images/espor.jpeg" >
+          </div>
+          <div class="text-box">
+            <h2 class="blog-title">PLAYING FOOTBALL IN BUKOBA  </h2>
+          
+            <div class="metin"><br>
+                i love playing football.<br>
+                 i used to play number 11 on the pitch.
+               
+
+            </div>
+        </div>
+    </div>
+  </div>
+      
+    </section>
+    
+    <script>
+      
+      ScrollReveal({
+        
+        distance: '60px', 
+        duration: 1200, 
+       
+      });
+
+    
+      ScrollReveal().reveal('.ana_baslik, .blog-title', { delay: 500, origin: 'right' });
+      ScrollReveal().reveal('.sec-01 .image, ', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'bottom' });
+  
+    </script>
+
+<script>
+  const chk = document.getElementById('chk');
+
+  chk.addEventListener('change', () => {
+	document.body.classList.toggle('light');
+});
+</script>
+
+  </body>
+</html>

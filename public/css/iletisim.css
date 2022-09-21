@@ -1,0 +1,77 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+body {
+font-family: "Roboto", Helvetica, Arial, sans-serif;
+font-weight: 150px;
+font-size: 15px;
+line-height: 30px;
+color: rgb(28, 23, 23);
+background-image:url("./background.jpeg") !important;
+background-size:cover;
+background-repeat:no-repeat;
+
+
+  
+}
+.container {
+max-width: 400px;
+width: 100%;
+margin: 0 auto;
+position: relative;
+background-color: #FFF;
+}
+
+#iletisim {
+
+padding: 25px;
+margin: 100px 0;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#iletisim h2 {
+display: block;
+font-size: 30px;
+font-weight: 300;
+margin-bottom: 15px;
+}
+.form-control{
+border: none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
+#iletisim input[type="text"],
+#iletisim input[type="email"],
+#iletisim textarea {
+width: 100%;
+border: 1px solid #ccc;
+
+margin: 0 0 5px;
+padding: 10px;
+}
+
+#iletisim textarea {
+height: 120px;
+max-width: 100%;
+
+}
+#iletisim button[type="submit"] {
+cursor: pointer;
+width: 100%;
+border: none;
+background: #79A7A8;
+color: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+font-size: 15px;
+}
+
+
